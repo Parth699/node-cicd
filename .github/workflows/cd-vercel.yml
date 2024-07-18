@@ -12,6 +12,7 @@ on:
 jobs:
   Deploy-development:
     runs-on: ubuntu-latest
+    needs: [CI]
     steps:
       #INSTALL NODEJS & NPM ON VERCEL
       - uses: actions/checkout@v2
