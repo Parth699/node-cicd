@@ -10,4 +10,14 @@ app.get('/',(req,res)=>{
     res.json({msg:'Hello...'});
 })
 
+app.get('/info',(req,res)=>{
+    res.status(200).json({
+        api: 'REST',
+        host: 'Ubuntu',
+        port: 80,
+        description: 'This is a simple node express api with ci/cd using github actions with hosted runner in ec2.'
+    });
+    
+})
+
 module.exports={app};
