@@ -6,6 +6,10 @@ app.get('/test',(req,res)=>{
     res.status(200).send('Hello, Test endpoint.')
 })
 
+app.get('/test0',(req,res)=>{
+    res.status(200).send('Hello');
+})
+
 app.get('/',(req,res)=>{
     res.json({msg:'Hello...'});
 })
